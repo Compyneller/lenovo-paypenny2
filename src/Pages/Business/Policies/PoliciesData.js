@@ -62,66 +62,66 @@ export const PoliciesData = [
   },
   {
     file: doc10,
-    name: "1. Authentication _ Identity Management Policy",
+    name: "Authentication _ Identity Management Policy",
   },
   {
     file: doc11,
-    name: "2. Password Management Policy",
+    name: "Password Management Policy",
   },
   {
     file: doc12,
-    name: "3. Vulnerability Management policy and procedure",
+    name: "Vulnerability Management policy and procedure",
   },
   {
     file: doc13,
-    name: "4. Remediation of Vulnerabilities and required Patches",
+    name: "Remediation of Vulnerabilities and required Patches",
   },
   {
     file: doc14,
-    name: "5. Communications policy and procedure",
+    name: "Communications policy and procedure",
   },
   {
     file: doc15,
-    name: "6. Security policy and procedures",
+    name: "Security policy and procedures",
   },
   {
     file: doc16,
-    name: "7. Asset Management policy or procedure",
+    name: "Asset Management policy or procedure",
   },
   {
     file: doc17,
-    name: "8. Systems Development Lifecycle (SDLC) policy and procedure",
+    name: "Systems Development Lifecycle (SDLC) policy and procedure",
   },
   {
     file: doc18,
-    name: "9. Asset onboarding and off-boarding Process",
+    name: "Asset onboarding and off-boarding Process",
   },
   {
     file: doc19,
-    name: "10. Disaster Recovery policy or procedure",
+    name: "Disaster Recovery policy or procedure",
   },
   {
     file: doc20,
-    name: "11. Data Categorization and Classification policy or Procedure",
+    name: "Data Categorization and Classification policy or Procedure",
   },
   {
     file: doc21,
-    name: "12. Incident Management and Response Policy",
+    name: "Incident Management and Response Policy",
   },
   {
     file: doc22,
-    name: "13. Log Management or Network Monitoring policy",
+    name: "Log Management or Network Monitoring policy",
   },
   {
     file: doc23,
-    name: "14. Documented Fraud Prevention program",
+    name: "Documented Fraud Prevention program",
   },
   {
     file: doc24,
-    name: "15. Segregation of Duties policy and procedure",
+    name: "Segregation of Duties policy and procedure",
   },
   {
     file: doc25,
-    name: "16. Change management process",
+    name: "Change management process",
   },
 ];
