@@ -1,0 +1,48 @@
+.whyMainContainer{
+    min-height: 100vh;
+    background: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    h1{
+        color: white;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .whySideImage{
+        img{
+            width: 100%;
+            
+            mix-blend-mode: screen;
+            image-rendering: auto;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
+          
+            /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+            image-rendering: -webkit-optimize-contrast;
+        }
+
+    }
+    .whySideCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        img{
+           
+            width: 25%;
+        }
+
+    }
+    
+
+}
+@media screen and (max-width : 992px) {
+    .whyMainContainer{
+        padding: 3rem 0 !important;
+    }
+    
+}

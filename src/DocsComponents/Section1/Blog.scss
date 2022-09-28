@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+h1{
+    font-family: 'Public Sans', sans-serif !important;
+
+}
+.myPortfolioContainer{
+    min-height: 70vh;
+    width: 100%;
+    background: #051422 !important;
+    color: white;
+    h1{
+        font-family: 'Public Sans', sans-serif !important;
+
+    }
+    
+   
+
+}
+.blog__card{
+    background: none;
+    height: 100%;
+    border-bottom: 2px solid #FF5C00;
+    border-radius: 0;
+    h3{
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width : 800px) {
+    .mainBlogContainer{
+        h1{
+           
+                font-family: 'Public Sans', sans-serif !important;
+                font-size: 34px !important;
+                font-weight: 400 !important;
+           
+        }
+    }
+    
+}

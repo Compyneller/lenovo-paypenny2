@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+.paypenny-doc-text{
+    display: flex;
+
+	min-height: fit-content;
+	align-items: center;
+	justify-content: center;
+  }
+.content {
+    text-align: center;
+  }
+  
+  .content h2 {
+    color: #000;
+    font-size: 4vw;
+    // position: absolute;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 900;
+    // transform: translate(-50%, -50%);
+    position: relative;
+    &::before{
+
+        content: "PayPenny";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: #000;
+        animation: animate 4s ease-in-out infinite;
+    }
+  }
+  
+  .content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+  }
+.content2 {
+    text-align: center;
+  }
+  
+  .content2 h2 {
+    color: #000;
+    font-size: 4vw;
+    // position: absolute;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 900;
+    // transform: translate(-50%, -50%);
+    position: relative;
+    &::before{
+
+        content: "Documents";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: #000;
+        animation: animate 4s ease-in-out infinite;
+    }
+  }
+  
+  .content2 h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+  }
+
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+.cld-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+background-image: url('../../../PayPennyDocument/Live-Wave-Background.svg');
+background-size: cover;
+
+    h1{
+        font-size: 3vw;
+        font-weight: 700;
+        color: #000;
+        font-family: "Poppins", sans-serif !important;
+
+    }
+    .cld-content{
+        border: 2px solid black;
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem 0;
+        border-bottom-right-radius: 500px;
+        border-top-right-radius: 500px;
+        transition: 250ms ease-out;
+        cursor: pointer;
+        h5{
+            margin: 0 auto;
+        }
+        &:hover{
+            transition: 250ms ease-in;
+            background-color: #000;
+            color: #ffff;
+            transform: scale(1.05);
+        }
+    }
+}

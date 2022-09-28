@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+.HeroMainContainer{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    color: white;
+
+    flex-direction: column;
+    position: relative;
+
+    background-image: linear-gradient(to right bottom , black 10%, transparent 90%);
+    .HeroVideo{
+        position: absolute;
+        min-height: 90vh;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        width: 100%;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+    
+        /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+        image-rendering: -webkit-optimize-contrast;
+        flex-direction: column;
+        object-fit: cover;
+
+    }
+    .HeroNavBar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+    }
+    .container{
+        z-index: 2;
+        h1{ 
+            // width: 70%;
+            font-size: 3.438vw;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            z-index: -1 !important;
+        }
+    }
+    
+   
+}
+@media screen and (max-width : 850px) {
+    h1{
+        font-size: 50px !important;
+        width: 100% !important;
+    }
+    
+}

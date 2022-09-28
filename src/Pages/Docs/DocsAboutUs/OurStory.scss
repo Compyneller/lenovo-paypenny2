@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+.ourStory-container {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #ffff;
+
+  .ourStory-video {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+
+    video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+      filter: brightness(0.5);
+      z-index: 10;
+    }
+    h1 {
+      z-index: 100;
+      font-size: 5vw;
+      font-weight: 900;
+      font-family: "Poppins", sans-serif !important;
+      color: #ffff;
+      font-weight: bold !important;
+      margin: auto;
+    }
+  }
+}
+.ourStory__card1 {
+  border: none;
+  transition: 250ms ease-out;
+  position: relative;
+
+  z-index: 100;
+  border-radius: 5px;
+  background-color: #fd297a;
+background-image: linear-gradient(90deg, #fd297a 0%, #FC00FF 100%);
+
+
+  &::after {
+    content: " ";
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: -1;
+  }
+}
+.ourStory__card3 {
+  border: none;
+  transition: 250ms ease-out;
+  position: relative;
+
+  z-index: 100;
+  border-radius: 5px;
+  background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+
+
+  &::after {
+    content: " ";
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: -1;
+  }
+}
+.ourStory__card2 {
+  border: none;
+  transition: 250ms ease-out;
+  position: relative;
+
+  z-index: 100;
+  border-radius: 5px;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #fed54a 100%);
+  
+
+
+  &::after {
+    content: " ";
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: -1;
+  }
+}

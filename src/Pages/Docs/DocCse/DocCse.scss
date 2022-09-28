@@ -1,0 +1,42 @@
+.docsCse__container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffff;
+
+    .docCse__video{
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        video{
+            height: 50vh;
+            object-fit: cover;
+            width: 100%;
+            filter: brightness(.5);
+            position: absolute;
+            top: 0;
+
+
+        }
+        h1{
+            z-index: 100;
+            font-size: 5vw;
+            font-weight: 900;
+            font-family: "Poppins", sans-serif !important;
+            color: #ffff;
+            font-weight: bold !important;
+            margin: auto;
+
+        }
+    }
+    .quote__text{
+        font-size: 1.7vw;
+        line-height: 2.5vw;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif !important;
+
+    }
+}
