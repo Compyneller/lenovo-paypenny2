@@ -1,0 +1,43 @@
+.passport-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../../PayPennyDocument/Live-Wave-Background.svg');
+    background-size: cover;
+    h1{
+        font-size: 3.5vw;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 700;
+       }
+    a{
+        width: 100%;
+        border: 2px solid #000;
+        margin: 1rem 0;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 600;
+        color: #000;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 100px;
+        transition: 250ms ease-out;
+        &:hover{
+            transition: 250ms ease-in;
+            background-color: #000;
+            color: #ffff;
+            transform: scale(1.05);
+        }
+        
+       }
+       .minuteBook-image{
+        border-radius: 20px;
+        mix-blend-mode: lighten;
+       }
+       img{
+        border-radius: 20px;
+       }
+}

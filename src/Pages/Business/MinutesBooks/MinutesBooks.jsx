@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import DocNav from "../../../DocsComponents/DocNavBar/DocNav";
 import "./MinutesBooks.scss";
-import book from "../../../PayPennyDocument/112-book-morph-outline.gif";
+import book from "../../../PayPennyDocument/112-book-morph-flat.gif";
 import book2 from "../../../PayPennyDocument/99349-girl-with-books.gif";
 import doc1 from "../../../Documents/MinuteBook/Directors Minutes.pdf";
 import doc2 from "../../../Documents/MinuteBook/Directors Register.pdf";
@@ -24,33 +24,34 @@ const MinutesBooks = () => {
           <br />
           <br />
           <Row className="g-4">
-            <Col sm={12} lg={6} className="d-flex align-items-center">
-              <ol className="w-100">
-                <a target="_blank" href={doc1}>
-                  <li>Directors Minutes</li>
-                </a>
-                <a target="_blank" href={doc2}>
-                  <li>Directors Register</li>
-                </a>
-                <a target="_blank" href={doc3}>
-                  <li>Share Certificates</li>
-                </a>
-                <a target="_blank" href={doc4}>
-                  <li>Shareholders ledgers</li>
-                </a>
-                <a target="_blank" href={doc5}>
-                  <li>Shareholders Minutes</li>
-                </a>
-                <a target="_blank" href={doc6}>
-                  <li>Shareholders Register</li>
-                </a>
-                <a target="_blank" href={doc7}>
-                  <li>Unanimous shareholder agreements-Annual reports</li>
-                </a>
-              </ol>
+            <Col
+              sm={12}
+              lg={6}
+              className="d-flex flex-column align-items-center">
+              <a target="_blank" href={doc1}>
+                Directors Minutes
+              </a>
+              <a target="_blank" href={doc2}>
+                Directors Register
+              </a>
+              <a target="_blank" href={doc3}>
+                Share Certificates
+              </a>
+              <a target="_blank" href={doc4}>
+                Shareholders ledgers
+              </a>
+              <a target="_blank" href={doc5}>
+                Shareholders Minutes
+              </a>
+              <a target="_blank" href={doc6}>
+                Shareholders Register
+              </a>
+              <a target="_blank" href={doc7}>
+                Unanimous shareholder agreements-Annual reports
+              </a>
             </Col>
             <Col sm={12} lg={6}>
-              <img src={book2} alt="" className="w-100" />
+              <img src={book2} alt="" className="w-100 minuteBook-image" />
             </Col>
           </Row>
         </Container>

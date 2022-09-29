@@ -1,5 +1,6 @@
 .policy-container{
     min-height: 88vh;
+    overflow-y: hidden;
     width: 100%;
     background-image: url('../../../PayPennyDocument/Live-Wave-Background.svg');
     background-size: cover;
@@ -16,25 +17,15 @@
      
         font-family: "Poppins", sans-serif !important;
 
-        &:hover{
-            font-family: "Poppins", sans-serif !important;
-
-            transition: 250ms ease-in;
-            font-size: 20px;
-            font-weight: 800;
-            text-decoration: underline;
-
-        }
+       
     }
     .policy-card{
-        height: 50vh;
+        height: 60vh;
         overflow-y: scroll;
-        background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+        background: transparent;
+        border: none;
+
+        width: 100%;
         &::-webkit-scrollbar{
             width: .2em;
             
@@ -48,5 +39,27 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
             background-color: darkgrey;
             outline: 1px solid slategrey;
           }
+
+
+        a{
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem 0;
+            border-bottom-right-radius: 100px;
+            border-top-right-radius: 100px;
+            transition: 250ms ease-out;
+            font-weight: 600;
+            font-size: 0.9114583333333334vw;
+            &:hover{
+                transition: 250ms ease-in;
+                transform: scale(1.05);
+                background-color: #000;
+                color: #ffff;
+
+            }
+        }
     }
 }

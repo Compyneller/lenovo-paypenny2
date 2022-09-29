@@ -31,6 +31,15 @@ import CompanyLegalDocument from "./Pages/Business/CompanyLegalDocument/CompanyL
 import CompanyPolicy from "./Pages/Business/CompanyPolicy/CompanyPolicy";
 import MinutesBooks from "./Pages/Business/MinutesBooks/MinutesBooks";
 import Policies from "./Pages/Business/Policies/Policies";
+import PersonalDocuments from "./Pages/Business/PersonalDocuments/PersonalDocuments";
+import Passport from "./Pages/Business/Passport/Passport";
+import DrivingLicense from "./Pages/Business/DrivingLicense/DrivingLicense";
+import AddressProof from "./Pages/Business/AddressProof/AddressProof";
+import FintracLicense from "./Pages/Business/FincracLicense/FintracLicense";
+import HR from "./Pages/Business/HR/HR";
+import AccountTax from "./Pages/Business/AccountTax/AccountTax";
+import Employees from "./Pages/Business/Employees/Employees";
+import Incorporation from "./Pages/Business/Incorporation/Incorporation";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -64,6 +73,15 @@ function App() {
           <Route path="/company-policy" element={<CompanyPolicy />} />
           <Route path="/minutebooks" element={<MinutesBooks />} />
           <Route path="/policies" element={<Policies />} />
+          <Route path="/personal-documents" element={<PersonalDocuments />} />
+          <Route path="/passport" element={<Passport />} />
+          <Route path="/driving-license" element={<DrivingLicense />} />
+          <Route path="/address-proof" element={<AddressProof />} />
+          <Route path="/fintrac-license" element={<FintracLicense />} />
+          <Route path="/hr" element={<HR />} />
+          <Route path="/account-tax" element={<AccountTax />} />
+          <Route path="/employees" element={<Employees />} />
+          <Route path="/incorporation" element={<Incorporation />} />
         </Routes>
         {/* <Qr />
         <div className="divider container"></div>

@@ -3,7 +3,7 @@
 .minutebook-container{
     min-height: 100vh;
     width: 100%;
-    background: #ffff !important;
+    background-image: url('../../../PayPennyDocument/Live-Wave-Background.svg');
    h1{
     font-size: 3.5vw;
     font-family: "Poppins", sans-serif !important;
@@ -18,6 +18,8 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600;
     color: #000;
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
@@ -29,5 +31,8 @@
         transform: scale(1.05);
     }
     
+   }
+   img{
+    border-radius: 20px;
    }
 }

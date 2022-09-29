@@ -20,7 +20,9 @@ const CompanyLegalDocument = () => {
               sm={12}
               lg={6}
               className="d-flex flex-column justify-content-center">
-              <div className="w-100 cld-content">
+              <div
+                className="w-100 cld-content"
+                onClick={() => navigate("/incorporation")}>
                 <h5>Incorporation</h5>
               </div>
               <div
@@ -28,10 +30,14 @@ const CompanyLegalDocument = () => {
                 onClick={() => navigate("/minutebooks")}>
                 <h5>Minutes Book</h5>
               </div>
-              <div className="w-100 cld-content">
+              <div
+                className="w-100 cld-content"
+                onClick={() => navigate("/personal-documents")}>
                 <h5>Directors & Shareholders Personal Documents</h5>
               </div>
-              <div className="w-100 cld-content">
+              <div
+                className="w-100 cld-content"
+                onClick={() => navigate("/fintrac-license")}>
                 <h5>FINTRAC License & Screenshot</h5>
               </div>
               <div className="w-100 cld-content">

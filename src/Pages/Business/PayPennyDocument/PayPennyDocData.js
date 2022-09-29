@@ -25,10 +25,12 @@ export const PayPennyDocData = [
   {
     img: hr,
     name: "HR",
+    link: "/hr",
   },
   {
     img: account,
     name: "Account & Tax",
+    link: "/account-tax",
   },
   {
     img: marketing,
