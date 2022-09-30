@@ -35,6 +35,7 @@ export const PayPennyDocData = [
   {
     img: marketing,
     name: "Marketing",
+    link: "/marketing",
   },
   {
     img: cs,
@@ -47,6 +48,7 @@ export const PayPennyDocData = [
   {
     img: ring,
     name: "Ring Central",
+    link: "/ring-central",
   },
   {
     img: msgBird,
@@ -63,5 +65,6 @@ export const PayPennyDocData = [
   {
     img: bank,
     name: "Bank Account",
+    link: "/bank-account",
   },
 ];

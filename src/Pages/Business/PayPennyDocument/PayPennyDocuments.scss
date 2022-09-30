@@ -7,8 +7,17 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-image: url('../../../PayPennyDocument/Live-Wave-Background.svg');
-    background-size: cover;
+    position: relative;
+    video{
+      width: 100%;
+      min-height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+  }
     h1{
         color: #ffff;
         font-weight: 700;
@@ -27,7 +36,7 @@
         cursor: pointer;
         h5{
             font-family: "Poppins", sans-serif !important;
-            color: #000;
+            color: #ffff;
             transition: 250ms ease-out;
             font-weight: 400;
         }
@@ -90,14 +99,14 @@ box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.25);
         left: 0;
         right: 0;
         bottom: 0;
-        color: #000;
+        color: #ffff !important;
         animation: animate 4s ease-in-out infinite;
     }
   }
   
   .content h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #000;
+    -webkit-text-stroke: 2px #ffff !important;
   }
 .content2 {
     text-align: center;
@@ -119,14 +128,14 @@ box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.25);
         left: 0;
         right: 0;
         bottom: 0;
-        color: #000;
+        color: #ffff !important;
         animation: animate 4s ease-in-out infinite;
     }
   }
   
   .content2 h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #000;
+    -webkit-text-stroke: 2px #ffff !important;
   }
 
   
@@ -164,7 +173,7 @@ box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.25);
   @media screen and (max-width : 950px) {
     .content h2 {
         color: #000;
-        font-size: 10vw;
+        font-size: 10vw !important;
         // position: absolute;
         font-family: "Poppins", sans-serif !important;
         font-weight: 900;
@@ -178,13 +187,13 @@ box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.25);
             left: 0;
             right: 0;
             bottom: 0;
-            color: #000;
+            color: #ffff;
             animation: animate 4s ease-in-out infinite;
         }
       }
     .content2 h2 {
         color: #000;
-        font-size: 10vw;
+        font-size: 10vw !important;
         // position: absolute;
         font-family: "Poppins", sans-serif !important;
         font-weight: 900;
@@ -198,7 +207,7 @@ box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.25);
             left: 0;
             right: 0;
             bottom: 0;
-            color: #000;
+            color: #ffff;
             animation: animate 4s ease-in-out infinite;
         }
       }
@@ -214,7 +223,7 @@ box-shadow: 0px 0px 21px 10px rgba(0,0,0,0.25);
         cursor: pointer;
         h5{
             font-family: "Poppins", sans-serif !important;
-            color: #000;
+            color: #ffff;
             transition: 250ms ease-out;
             font-weight: 400;
         }

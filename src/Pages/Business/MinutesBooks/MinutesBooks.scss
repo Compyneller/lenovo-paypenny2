@@ -3,15 +3,18 @@
 .minutebook-container{
     min-height: 100vh;
     width: 100%;
-    background-image: url('../../../PayPennyDocument/Live-Wave-Background.svg');
+    background-image: linear-gradient(
+        to right bottom , #0D47A1 10%, black 90%
+      );
    h1{
     font-size: 3.5vw;
     font-family: "Poppins", sans-serif !important;
+    color:  #ffff;
     font-weight: 700;
    }
    a{
     width: 100%;
-    border: 2px solid #000;
+    border: 2px solid #ffff;
     margin: 1rem 0;
     padding: 1rem 0;
     display: flex;
@@ -20,14 +23,14 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif !important;
     font-weight: 600;
-    color: #000;
+    color: #ffff;
     border-bottom-right-radius: 100px;
     border-top-right-radius: 100px;
     transition: 250ms ease-out;
     &:hover{
         transition: 250ms ease-in;
-        background-color: #000;
-        color: #ffff;
+        background-color: #ffff;
+        color: #000;
         transform: scale(1.05);
     }
     

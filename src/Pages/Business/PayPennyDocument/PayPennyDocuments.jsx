@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 import DocNav from "../../../DocsComponents/DocNavBar/DocNav";
 import { PayPennyDocData } from "./PayPennyDocData";
 import "./PayPennyDocuments.scss";
-
+import video from "../../../PayPennyDocument/mixkit-stars-floating-in-the-dark-universe-32982-medium.mp4";
 const PayPennyDocuments = () => {
   const navigate = useNavigate();
   return (
     <>
       <DocNav />
       <div className="paypenny-documents-container">
+        <video src={video} muted autoPlay loop></video>
         <Container className="py-5">
           <div className="paypenny-doc-text">
             <section className="section__container">

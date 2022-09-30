@@ -40,6 +40,11 @@ import HR from "./Pages/Business/HR/HR";
 import AccountTax from "./Pages/Business/AccountTax/AccountTax";
 import Employees from "./Pages/Business/Employees/Employees";
 import Incorporation from "./Pages/Business/Incorporation/Incorporation";
+import Marketing from "./Pages/Business/Marketing/Marketing";
+import DirectMarketing from "./Pages/Business/Marketing/DirectMarketing/DirectMarketing";
+import DigitalMarketing from "./Pages/Business/Marketing/DigitalMarketing/DigitalMarketing";
+import RingCentral from "./Pages/Business/RingCentral/RingCentral";
+import BankAccount from "./Pages/Business/BankAccount/BankAccount";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -82,6 +87,11 @@ function App() {
           <Route path="/account-tax" element={<AccountTax />} />
           <Route path="/employees" element={<Employees />} />
           <Route path="/incorporation" element={<Incorporation />} />
+          <Route path="/marketing" element={<Marketing />} />
+          <Route path="/direct-marketing" element={<DirectMarketing />} />
+          <Route path="/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/ring-central" element={<RingCentral />} />
+          <Route path="/bank-account" element={<BankAccount />} />
         </Routes>
         {/* <Qr />
         <div className="divider container"></div>

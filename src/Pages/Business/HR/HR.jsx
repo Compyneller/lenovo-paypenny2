@@ -8,7 +8,7 @@ const HR = () => {
   return (
     <>
       <DocNav />
-      <div className="passport-container">
+      <div className="minutebook-container">
         <Container className="py-5">
           <Row className="g-5">
             <Col

@@ -2,15 +2,18 @@
     min-height: 88vh;
     overflow-y: hidden;
     width: 100%;
-    background-image: url('../../../PayPennyDocument/Live-Wave-Background.svg');
+    background-image: linear-gradient(
+        to right bottom , #0D47A1 10%, black 90%
+      );
     background-size: cover;
     h1{
         font-size: 3.5vw;
         font-family: "Poppins", sans-serif !important;
         font-weight: 700;
+        color: #ffff;
        }
     .policies-list{
-        color: #000;
+        color: #ffff;
         text-decoration: none;
         transition: 250ms ease-out;
         font-size: 16px;
@@ -43,7 +46,7 @@
 
         a{
             width: 100%;
-            border: 2px solid black;
+            border: 2px solid #ffff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -56,8 +59,8 @@
             &:hover{
                 transition: 250ms ease-in;
                 transform: scale(1.05);
-                background-color: #000;
-                color: #ffff;
+                background-color: #ffff;
+                color: #000;
 
             }
         }
