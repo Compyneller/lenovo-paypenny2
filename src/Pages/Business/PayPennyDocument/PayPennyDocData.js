@@ -44,6 +44,7 @@ export const PayPennyDocData = [
   {
     img: kd,
     name: "Knowledge Documents",
+    link: "/knowledge-document",
   },
   {
     img: ring,

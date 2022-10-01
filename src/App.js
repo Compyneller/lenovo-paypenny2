@@ -45,6 +45,8 @@ import DirectMarketing from "./Pages/Business/Marketing/DirectMarketing/DirectMa
 import DigitalMarketing from "./Pages/Business/Marketing/DigitalMarketing/DigitalMarketing";
 import RingCentral from "./Pages/Business/RingCentral/RingCentral";
 import BankAccount from "./Pages/Business/BankAccount/BankAccount";
+import CV from "./Pages/Business/CV/CV";
+import KD from "./Pages/Business/KnowledgeDoc/KD";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -92,6 +94,8 @@ function App() {
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/ring-central" element={<RingCentral />} />
           <Route path="/bank-account" element={<BankAccount />} />
+          <Route path="/employees-cv" element={<CV />} />
+          <Route path="/knowledge-document" element={<KD />} />
         </Routes>
         {/* <Qr />
         <div className="divider container"></div>

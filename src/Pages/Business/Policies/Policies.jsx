@@ -17,28 +17,23 @@ const Policies = () => {
           </div>
           <br />
           <br />
-          <Row className="g-3">
-            <Col sm={12} lg={6} className="d-flex align-items-center">
-              <Card className="policy-card">
-                <Card.Body>
-                  <ol className="d-flex flex-column">
-                    {PoliciesData.map((items, index) => {
-                      return (
-                        <a
-                          href={items.file}
-                          key={index}
-                          className="policies-list mb-3">
-                          <li>{items.name}</li>
-                        </a>
-                      );
-                    })}
-                  </ol>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm={12} lg={6}>
-              <img src={image} alt="" className="w-100" />
-            </Col>
+          <Row className="g-4">
+            {PoliciesData.map((items, index) => {
+              return (
+                <Col xs={12} sm={6} md={4} lg={3}>
+                  <Card className="policy-card">
+                    <Card.Body>
+                      <a
+                        href={items.file}
+                        key={index}
+                        className="policies-list mb-3">
+                        {items.name}
+                      </a>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              );
+            })}
           </Row>
         </Container>
       </div>

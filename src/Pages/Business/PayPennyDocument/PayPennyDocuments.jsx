@@ -13,19 +13,6 @@ const PayPennyDocuments = () => {
       <div className="paypenny-documents-container">
         <video src={video} muted autoPlay loop></video>
         <Container className="py-5">
-          <div className="paypenny-doc-text">
-            <section className="section__container">
-              <div className="content">
-                <h2>PayPenny</h2>
-              </div>
-              <div className="content2">
-                <h2>Documents</h2>
-              </div>
-            </section>
-          </div>
-          <br />
-          <br />
-
           <Row className="g-3">
             <br />
             {PayPennyDocData.map((items, index) => {

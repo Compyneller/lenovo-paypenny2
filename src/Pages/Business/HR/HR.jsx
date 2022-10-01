@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import DocNav from "../../../DocsComponents/DocNavBar/DocNav";
 import hr from "../../../PayPennyDocument/100618-career.gif";
-
+import doc1 from "../../../Documents/1. HR policy updated/HR  Policy-Fintech India UPDATED.pdf";
 const HR = () => {
   return (
     <>
@@ -15,11 +15,13 @@ const HR = () => {
               sm={12}
               lg={6}
               className="d-flex flex-column justify-content-center">
-              <a href="">Policy</a>
+              <a href={doc1} target="_blank">
+                Policy
+              </a>
               <a href="">Job Advert</a>
               <a href="">Job Description</a>
               <a href="">Performance Review</a>
-              <Link to="/employees">Employees</Link>
+              <Link to="/employees-cv">Employees</Link>
             </Col>
             <Col sm={12} lg={6}>
               <img src={hr} alt="" className="w-100" />
