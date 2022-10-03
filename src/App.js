@@ -47,6 +47,21 @@ import RingCentral from "./Pages/Business/RingCentral/RingCentral";
 import BankAccount from "./Pages/Business/BankAccount/BankAccount";
 import CV from "./Pages/Business/CV/CV";
 import KD from "./Pages/Business/KnowledgeDoc/KD";
+import Partnership from "./Pages/Business/Partnership/Partnership";
+import Partner2020 from "./Pages/Business/2020-21/Partner2020";
+import AccountActivitySheet from "./Pages/Business/AccountActivitySheet/AccountActivitySheet";
+import AllActiveAccount from "./Pages/Business/2020-21/AllActivityAccountSheet/AllActiveAccount";
+import Feb21 from "./Pages/Business/2020-21/Feb21/Feb21";
+import March21 from "./Pages/Business/2020-21/March21/March21";
+import April21 from "./Pages/Business/2020-21/April/April21";
+import May21 from "./Pages/Business/2020-21/May21/May21";
+import June21 from "./Pages/Business/2020-21/June21Data/June21";
+import July21 from "./Pages/Business/2020-21/July/July21";
+import Aug21 from "./Pages/Business/2020-21/Aug21/Aug21";
+import Sept21 from "./Pages/Business/2020-21/Sept21/Sept21";
+import BankStateMent21 from "./Pages/Business/BankStatement21/BankStateMent21";
+import JanBank21 from "./Pages/Business/BankStatement21/Jan21/JanBank21";
+import FebBank21 from "./Pages/Business/BankStatement21/Feb21/FebBank21";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -96,17 +111,28 @@ function App() {
           <Route path="/bank-account" element={<BankAccount />} />
           <Route path="/employees-cv" element={<CV />} />
           <Route path="/knowledge-document" element={<KD />} />
+          <Route path="/partnership" element={<Partnership />} />
+          <Route path="/2020-21" element={<Partner2020 />} />
+          <Route
+            path="/account-activity-sheet"
+            element={<AccountActivitySheet />}
+          />
+          <Route
+            path="/all-activity-account-sheet"
+            element={<AllActiveAccount />}
+          />
+          <Route path="/feb21" element={<Feb21 />} />
+          <Route path="/march21" element={<March21 />} />
+          <Route path="/April21" element={<April21 />} />
+          <Route path="/May21" element={<May21 />} />
+          <Route path="/June21" element={<June21 />} />
+          <Route path="/July21" element={<July21 />} />
+          <Route path="/August21" element={<Aug21 />} />
+          <Route path="/September21" element={<Sept21 />} />
+          <Route path="/bank-statement" element={<BankStateMent21 />} />
+          <Route path="/bank-statement-jan21" element={<JanBank21 />} />
+          <Route path="/bank-statement-feb21" element={<FebBank21 />} />
         </Routes>
-        {/* <Qr />
-        <div className="divider container"></div>
-        {window.location.href === "https://paypenny.io/uk" ? (
-          <MoneySubFooter />
-        ) : (
-          <SubFooter />
-        )}
-
-        <div className="divider container"></div>
-        <Footer /> */}
       </Router>
     </div>
   );

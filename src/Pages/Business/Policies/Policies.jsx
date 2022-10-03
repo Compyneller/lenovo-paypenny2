@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Nav, Row } from "react-bootstrap";
 import DocNav from "../../../DocsComponents/DocNavBar/DocNav";
 import image from "../../../PayPennyDocument/Taxi_woman_with_laptop_transparent_by_Icons8.gif";
 import "./Policies.scss";
@@ -21,16 +21,16 @@ const Policies = () => {
             {PoliciesData.map((items, index) => {
               return (
                 <Col xs={12} sm={6} md={4} lg={3}>
-                  <Card className="policy-card">
-                    <Card.Body>
-                      <a
-                        href={items.file}
-                        key={index}
-                        className="policies-list mb-3">
+                  <Nav.Link
+                    href={items.file}
+                    key={index}
+                    className="policies-list mb-3">
+                    <Card className="policy-card">
+                      <Card.Body className="d-flex flex-column justify-content-center">
                         {items.name}
-                      </a>
-                    </Card.Body>
-                  </Card>
+                      </Card.Body>
+                    </Card>
+                  </Nav.Link>
                 </Col>
               );
             })}

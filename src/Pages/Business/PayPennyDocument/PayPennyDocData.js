@@ -58,6 +58,7 @@ export const PayPennyDocData = [
   {
     img: partnership,
     name: "Partnership",
+    link: "/partnership",
   },
   {
     img: login,

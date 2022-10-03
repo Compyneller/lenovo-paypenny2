@@ -7,31 +7,31 @@ import doc6 from "../../../Documents/FintracScreenShot/JASPREET CV.pdf";
 import doc7 from "../../../Documents/FintracScreenShot/Jaspreet Utility Bill.pdf";
 export const FintracData = [
   {
-    file: doc1,
+    link: doc1,
     name: "PayPenny (TrackOn) Purchase Agreement",
   },
   {
-    file: doc2,
+    link: doc2,
     name: "Ring Central Bill",
   },
   {
-    file: doc3,
+    link: doc3,
     name: "Proof of Applicable Registration",
   },
   {
-    file: doc4,
+    link: doc4,
     name: "License",
   },
   {
-    file: doc5,
+    link: doc5,
     name: "License- FINTRAC",
   },
   {
-    file: doc6,
+    link: doc6,
     name: "JASPREET CV",
   },
   {
-    file: doc7,
-    name: "Jaspreet Utility Bill.pdf",
+    link: doc7,
+    name: "Jaspreet Utility Bill",
   },
 ];

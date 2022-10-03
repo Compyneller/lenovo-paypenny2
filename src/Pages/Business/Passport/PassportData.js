@@ -4,19 +4,19 @@ import doc3 from "../../../Documents/Passport/Nitan passport.pdf";
 import doc4 from "../../../Documents/Passport/Jaspreet Passport.pdf";
 export const PassportData = [
   {
-    file: doc1,
+    link: doc1,
     name: "Sandeep Kaur Passport",
   },
   {
-    file: doc2,
+    link: doc2,
     name: "Prem Bhalla Passport",
   },
   {
-    file: doc3,
+    link: doc3,
     name: "Nitan passport",
   },
   {
-    file: doc4,
+    link: doc4,
     name: "Jaspreet Passport",
   },
 ];

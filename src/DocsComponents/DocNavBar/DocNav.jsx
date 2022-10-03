@@ -7,17 +7,7 @@ import logo from "../../Assets/Logo-01.png";
 import AboutDropDown from "./AboutDropDown";
 import BlogDropDown from "./BlogDropDown";
 import CustomerServiceDropdown from "./CustomerServiceDropdown";
-import "./DocNavBar.scss";
-import LegalDropDown from "./LegalDropDown";
 const DocNav = () => {
-  const [legalLink, setLegalLink] = useState(false);
-
-  const showLegalLink = (e) => {
-    setLegalLink(!legalLink);
-  };
-  const hideLegalLink = (e) => {
-    setLegalLink(false);
-  };
   return (
     <>
       <Navbar expand="lg" style={{ background: "#000" }}>

@@ -17,10 +17,8 @@
     background: #424242;
     border-bottom: 5px solid rgb(0, 64, 255);
     transition: 250ms ease-in;
-    a{
-        text-decoration: none;
-        color: #ffff;
-    }
+    color: #ffff;
+  
     &:hover{
         transition: 250ms ease-in;
        
@@ -32,3 +30,9 @@
        
     
 }
+  a{
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        color: #ffff;
+    }

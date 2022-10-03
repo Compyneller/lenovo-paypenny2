@@ -19,31 +19,19 @@ const BusinessComp = ({ data, image, book, heading }) => {
             {data.map((items, index) => {
               return (
                 <Col xs={12} sm={6} md={4} lg={3}>
-                  <Card className="policy-card">
-                    <Card.Body>
-                      <Nav.Link
-                        href={items.link}
-                        key={index}
-                        className="policies-list mb-3">
+                  <Nav.Link
+                    href={items.link}
+                    key={index}
+                    className="policies-list w-100">
+                    <Card className="policy-card w-100 ">
+                      <Card.Body className="d-flex flex-column justify-content-center">
                         {items.name}
-                      </Nav.Link>
-                    </Card.Body>
-                  </Card>
+                      </Card.Body>
+                    </Card>
+                  </Nav.Link>
                 </Col>
               );
             })}
-            {/* <Col
-              sm={12}
-              lg={6}
-              className="d-flex flex-column justify-content-center">
-              {data.map((items, index) => {
-                return (
-                  <Nav.Link href={items.link} key={index}>
-                    {items.name}
-                  </Nav.Link>
-                );
-              })}
-            </Col> */}
           </Row>
         </Container>
       </div>
