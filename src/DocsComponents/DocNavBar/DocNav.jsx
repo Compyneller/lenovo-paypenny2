@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Card, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import interact from "../../Assets/Interac_Brand.png";
 
-import { Link } from "react-router-dom";
 import logo from "../../Assets/Logo-01.png";
 import AboutDropDown from "./AboutDropDown";
 import BlogDropDown from "./BlogDropDown";
@@ -25,9 +23,9 @@ const DocNav = () => {
             style={{ filter: "invert(1)" }}
           />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto docs-nav">
+            <Nav className="ms-auto ">
               <Nav.Link
-                className="text-light "
+                className="text-light"
                 href="https://www.interac.ca/en/content/life/three-reasons-to-set-up-interac-e-transfer-autodeposit-today/"
                 target="_blank">
                 <img src={interact} alt="" height={40} />

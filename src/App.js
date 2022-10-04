@@ -62,6 +62,16 @@ import Sept21 from "./Pages/Business/2020-21/Sept21/Sept21";
 import BankStateMent21 from "./Pages/Business/BankStatement21/BankStateMent21";
 import JanBank21 from "./Pages/Business/BankStatement21/Jan21/JanBank21";
 import FebBank21 from "./Pages/Business/BankStatement21/Feb21/FebBank21";
+import Mar21 from "./Pages/Business/BankStatement21/Mar21/Mar21";
+import BankApril21 from "./Pages/Business/BankStatement21/April/BankApril21";
+import BankMay21 from "./Pages/Business/BankStatement21/May21/BankMay21";
+import BankJune21 from "./Pages/Business/BankStatement21/June21/BankJune21";
+import BankJuly21 from "./Pages/Business/BankStatement21/July21/BankJuly21";
+import BankAug21 from "./Pages/Business/BankStatement21/Aug21/BankAug21";
+import BankSep21 from "./Pages/Business/BankStatement21/Sep21/BankSep21";
+import BankOct from "./Pages/Business/BankStatement21/Oct21/BankOct";
+import BankNov21 from "./Pages/Business/BankStatement21/Nov21/BankNov21";
+import BankDec21 from "./Pages/Business/BankStatement21/Dec21/BankDec21";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -132,6 +142,16 @@ function App() {
           <Route path="/bank-statement" element={<BankStateMent21 />} />
           <Route path="/bank-statement-jan21" element={<JanBank21 />} />
           <Route path="/bank-statement-feb21" element={<FebBank21 />} />
+          <Route path="/bank-statement-march21" element={<Mar21 />} />
+          <Route path="/bank-statement-April21" element={<BankApril21 />} />
+          <Route path="/bank-statement-May21" element={<BankMay21 />} />
+          <Route path="/bank-statement-July21" element={<BankJune21 />} />
+          <Route path="/bank-statement-June21" element={<BankJuly21 />} />
+          <Route path="/bank-statement-August21" element={<BankAug21 />} />
+          <Route path="/bank-statement-September21" element={<BankSep21 />} />
+          <Route path="/bank-statement-October21" element={<BankOct />} />
+          <Route path="/bank-statement-November21" element={<BankNov21 />} />
+          <Route path="/bank-statement-December21" element={<BankDec21 />} />
         </Routes>
       </Router>
     </div>
