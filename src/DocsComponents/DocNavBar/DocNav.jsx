@@ -10,7 +10,7 @@ const DocNav = () => {
     <>
       <Navbar expand="lg" style={{ background: "#000" }}>
         <Container fluid className="px-2 px-lg-5">
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" style={{ width: "fit-content" }}>
             <img
               src={logo}
               alt=""
