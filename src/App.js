@@ -72,6 +72,22 @@ import BankSep21 from "./Pages/Business/BankStatement21/Sep21/BankSep21";
 import BankOct from "./Pages/Business/BankStatement21/Oct21/BankOct";
 import BankNov21 from "./Pages/Business/BankStatement21/Nov21/BankNov21";
 import BankDec21 from "./Pages/Business/BankStatement21/Dec21/BankDec21";
+import FInalReconciliation from "./Pages/Business/Final Reconciliation/FInalReconciliation";
+import Jan21 from "./Pages/Business/Final Reconciliation/Jan21/Jan21";
+import FinalFeb21 from "./Pages/Business/Final Reconciliation/FinalFeb21/FinalFeb21";
+import FinalMar21 from "./Pages/Business/Final Reconciliation/FinalMar21/FinalMar21";
+import FinalApril21 from "./Pages/Business/Final Reconciliation/FinalApril21/FinalApril21";
+import FinalMay21 from "./Pages/Business/Final Reconciliation/FinalMay21/FinalMay21";
+import FinalJune21 from "./Pages/Business/Final Reconciliation/FinalJune21/FinalJune21";
+import FinalJuly21 from "./Pages/Business/Final Reconciliation/FinalJuly21/FinalJuly21";
+import FinalAug21 from "./Pages/Business/Final Reconciliation/FinalAugust21/FinalAug21";
+import FinalSept21 from "./Pages/Business/Final Reconciliation/FinalSep21/FinalSept21";
+import FinalOct21 from "./Pages/Business/Final Reconciliation/FinalOct21/FinalOct21";
+import FinalNov21 from "./Pages/Business/Final Reconciliation/FinalNov21/FinalNov21";
+import FinalDec21 from "./Pages/Business/Final Reconciliation/FinalDec21/FinalDec21";
+import Partner22 from "./Pages/Business/2021-22/Partner22";
+import AccActivitySheet22 from "./Pages/Business/2021-22/Account Activity Sheet/AccActivitySheet22";
+import Nov22 from "./Pages/Business/2021-22/Account Activity Sheet/Nov22/Nov22";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -140,18 +156,55 @@ function App() {
           <Route path="/August21" element={<Aug21 />} />
           <Route path="/September21" element={<Sept21 />} />
           <Route path="/bank-statement" element={<BankStateMent21 />} />
-          <Route path="/bank-statement-jan21" element={<JanBank21 />} />
-          <Route path="/bank-statement-feb21" element={<FebBank21 />} />
-          <Route path="/bank-statement-march21" element={<Mar21 />} />
-          <Route path="/bank-statement-April21" element={<BankApril21 />} />
-          <Route path="/bank-statement-May21" element={<BankMay21 />} />
-          <Route path="/bank-statement-July21" element={<BankJune21 />} />
-          <Route path="/bank-statement-June21" element={<BankJuly21 />} />
-          <Route path="/bank-statement-August21" element={<BankAug21 />} />
-          <Route path="/bank-statement-September21" element={<BankSep21 />} />
-          <Route path="/bank-statement-October21" element={<BankOct />} />
-          <Route path="/bank-statement-November21" element={<BankNov21 />} />
-          <Route path="/bank-statement-December21" element={<BankDec21 />} />
+          <Route
+            path="/final-reconciliation"
+            element={<FInalReconciliation />}
+          />
+          <Route path="/final-reconciliation-jan21" element={<Jan21 />} />
+          <Route path="/final-reconciliation-feb21" element={<FinalFeb21 />} />
+          <Route
+            path="/final-reconciliation-march21"
+            element={<FinalMar21 />}
+          />
+          <Route
+            path="/final-reconciliation-April21"
+            element={<FinalApril21 />}
+          />
+          <Route path="/final-reconciliation-May21" element={<FinalMay21 />} />
+          <Route
+            path="/final-reconciliation-July21"
+            element={<FinalJune21 />}
+          />
+          <Route
+            path="/final-reconciliation-June21"
+            element={<FinalJuly21 />}
+          />
+          <Route
+            path="/final-reconciliation-August21"
+            element={<FinalAug21 />}
+          />
+          <Route
+            path="/final-reconciliation-September21"
+            element={<FinalSept21 />}
+          />
+          <Route
+            path="/final-reconciliation-October21"
+            element={<FinalOct21 />}
+          />
+          <Route
+            path="/final-reconciliation-November21"
+            element={<FinalNov21 />}
+          />
+          <Route
+            path="/final-reconciliation-December21"
+            element={<FinalDec21 />}
+          />
+          <Route path="/2021-22" element={<Partner22 />} />
+          <Route
+            path="/account-activity-sheet-22"
+            element={<AccActivitySheet22 />}
+          />
+          <Route path="/November22" element={<Nov22 />} />
         </Routes>
       </Router>
     </div>
