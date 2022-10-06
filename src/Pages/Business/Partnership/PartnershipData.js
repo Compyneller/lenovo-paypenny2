@@ -7,4 +7,8 @@ export const PartnershipData = [
     name: "2021-22",
     link: "/2021-22",
   },
+  {
+    name: "Corporate Contracts",
+    link: "/corporate-contracts",
+  },
 ];

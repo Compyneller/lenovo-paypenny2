@@ -88,6 +88,18 @@ import FinalDec21 from "./Pages/Business/Final Reconciliation/FinalDec21/FinalDe
 import Partner22 from "./Pages/Business/2021-22/Partner22";
 import AccActivitySheet22 from "./Pages/Business/2021-22/Account Activity Sheet/AccActivitySheet22";
 import Nov22 from "./Pages/Business/2021-22/Account Activity Sheet/Nov22/Nov22";
+import CorporateContracts from "./Pages/Business/Partnership/CorporateContracts/CorporateContracts";
+import Affle from "./Pages/Business/Partnership/CorporateContracts/Affle/Affle";
+import AffleDoc1 from "./Pages/Business/Partnership/CorporateContracts/Affle/AffleDoc1/AffleDoc1";
+import Apaylo from "./Pages/Business/Partnership/CorporateContracts/Apaylo/Apaylo";
+import Compliance from "./Pages/Business/Partnership/CorporateContracts/Compliance/Compliance";
+import ComplyAdvantage from "./Pages/Business/Partnership/CorporateContracts/Compliance/Complyadvantage/ComplyAdvantage";
+import Remitone from "./Pages/Business/Partnership/CorporateContracts/Compliance/Remitone/Remitone";
+import CryptoStableCoin from "./Pages/Business/Partnership/CorporateContracts/CryptoStableCoin/CryptoStableCoin";
+import IT from "./Pages/Business/Partnership/CorporateContracts/IT/IT";
+import Kiwitech from "./Pages/Business/Partnership/CorporateContracts/Kiwitech/Kiwitech";
+import Onfido from "./Pages/Business/Partnership/CorporateContracts/Onfido/Onfido";
+import Payment from "./Pages/Business/Partnership/CorporateContracts/PaymentGateway/Payment";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -205,6 +217,18 @@ function App() {
             element={<AccActivitySheet22 />}
           />
           <Route path="/November22" element={<Nov22 />} />
+          <Route path="/corporate-contracts" element={<CorporateContracts />} />
+          <Route path="/affle" element={<Affle />} />
+          <Route path="/affle-doc1" element={<AffleDoc1 />} />
+          <Route path="/apaylo" element={<Apaylo />} />
+          <Route path="/compliance" element={<Compliance />} />
+          <Route path="/Complyadvantage" element={<ComplyAdvantage />} />
+          <Route path="/Remitone" element={<Remitone />} />
+          <Route path="/crypto-stablecoin" element={<CryptoStableCoin />} />
+          <Route path="/it" element={<IT />} />
+          <Route path="/kiwitech" element={<Kiwitech />} />
+          <Route path="/Onfido" element={<Onfido />} />
+          <Route path="/payment-gateways" element={<Payment />} />
         </Routes>
       </Router>
     </div>
