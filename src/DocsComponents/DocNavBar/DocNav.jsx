@@ -6,6 +6,7 @@ import AboutDropDown from "./AboutDropDown";
 import BlogDropDown from "./BlogDropDown";
 import CustomerServiceDropdown from "./CustomerServiceDropdown";
 const DocNav = () => {
+  console.log(JSON.parse(localStorage.getItem("ip")));
   return (
     <>
       <Navbar expand="lg" style={{ background: "#000" }}>
@@ -54,9 +55,11 @@ const DocNav = () => {
               <BlogDropDown />
 
               <CustomerServiceDropdown />
-              <Nav.Link href="/documents" className="text-light">
-                Business
-              </Nav.Link>
+              {JSON.parse(localStorage.getItem("ip")) === "49.36.213.215" ? (
+                <Nav.Link href="/documents" className="text-light">
+                  Business
+                </Nav.Link>
+              ) : null}
             </Nav>
           </Navbar.Collapse>
         </Container>

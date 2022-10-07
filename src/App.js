@@ -23,7 +23,7 @@ import Docs from "./Pages/Docs/HomeScreen/Docs";
 import DocBlog from "./Pages/Docs/DocBlog/DocBlog";
 import OurStory from "./Pages/Docs/DocsAboutUs/OurStory";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import DocCse from "./Pages/Docs/DocCse/DocCse";
 import DocsLegal from "./Pages/Docs/DocsLegalDocuments/DocsLegal";
 import PayPennyDocuments from "./Pages/Business/PayPennyDocument/PayPennyDocuments";
@@ -100,12 +100,19 @@ import IT from "./Pages/Business/Partnership/CorporateContracts/IT/IT";
 import Kiwitech from "./Pages/Business/Partnership/CorporateContracts/Kiwitech/Kiwitech";
 import Onfido from "./Pages/Business/Partnership/CorporateContracts/Onfido/Onfido";
 import Payment from "./Pages/Business/Partnership/CorporateContracts/PaymentGateway/Payment";
+import axios from "axios";
 function App() {
   useEffect(() => {
     AOS.init({
       duration: 2000,
     });
+    const fetchIP = async () => {
+      const data = await axios.get("https://api.ipify.org?format=json");
+      localStorage.setItem("ip", JSON.stringify(data?.data?.ip));
+    };
+    fetchIP();
   }, []);
+
   return (
     <div className="App">
       <Router>
